@@ -112,7 +112,7 @@ module.exports.login = (req, res, next) => {
     .then((user) => {
       const token = jwt.sign({ _id: user._id }, 'some-secret-key');
 
-      res.cookie('token', token, {
+      res.cookie('jwt', token, {
         maxAge: 3600000 * 24 * 7,
         httpOnly: true,
       });
@@ -145,7 +145,7 @@ module.exports.logout = async (req, res, next) => {
       next(new UnauthorizedError('Пользователь не авторизован'));
       return;
     }
-    res.clearCookie('token').send({ message: 'token удалён' }).end();
+    res.clearCookie('jwt').send({ message: 'token удалён' }).end();
   } catch (err) {
     next(err);
   }
