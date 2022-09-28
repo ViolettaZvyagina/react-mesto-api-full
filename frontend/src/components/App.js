@@ -185,6 +185,23 @@ function App() {
 
   useEffect(() => {
     if (isLoggedIn) {
+      getUserData();
+    }
+  })
+
+  function getUserData () {    
+    auth.getEmail()
+    .then((res) => {    
+      setUserEmail(res.email);
+      setIsLoggedIn(true);
+    })
+    .catch((error) => {
+      console.log(`Ошибка: ${error}`);
+    })
+  }
+
+  useEffect(() => {
+    if (isLoggedIn) {
       history.push('/');
     }
   }, [isLoggedIn, history])
@@ -212,7 +229,7 @@ function App() {
     auth.logOut()
     .then(() => {
       setIsLoggedIn(() => {
-        localStorage.setItem('isloggedIn', false);
+        localStorage.removeItem('isloggedIn');
         return false;
       });
       setUserEmail('');

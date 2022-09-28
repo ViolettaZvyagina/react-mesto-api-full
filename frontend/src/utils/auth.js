@@ -32,17 +32,14 @@ export const authorize = ({email, password}) => {
   .then(res => handleResponse(res));
 }
 
-/* export const getToken = (token) => {
+export const getEmail = () => {
     return fetch(`${BASE_URL}/users/me`, {
       method: 'GET',
-      headers: {
-      ...headers,
-      "Authorization" : `Bearer ${token}`
-      }, 
+      headers, 
       credentials: "include"
     })
     .then(res => handleResponse(res));
-  } */
+  }
 
   export const logOut = () => {
     return fetch(`${BASE_URL}/signout`, {
