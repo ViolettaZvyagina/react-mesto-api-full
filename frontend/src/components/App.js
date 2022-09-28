@@ -30,7 +30,7 @@ function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [cards, setCards] = useState([]);
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isloggedIn'));
   const [userEmail, setUserEmail] = useState('');
   const [infoTooltipStatus, setInfoTooltipStatus] = useState({})
   const history = useHistory();
