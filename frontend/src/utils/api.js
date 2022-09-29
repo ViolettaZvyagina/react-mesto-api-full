@@ -95,7 +95,7 @@ export default class Api {
 }); */
 
 export const api = new Api({ 
-  url:'http://localhost:4000', 
+  url:'http://zvyagina.students.nomorepartiesxyz.ru', 
   headers: {
   //authorization: '542751f4-2e93-4fad-82e3-6e5a73ce5b6d',
   'Content-Type': 'application/json'

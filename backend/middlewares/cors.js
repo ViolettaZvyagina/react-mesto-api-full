@@ -1,4 +1,6 @@
 const allowedCors = [
+  'https://api.zvyagina.students.nomorepartiesxyz.ru',
+  'http://api.zvyagina.students.nomorepartiesxyz.ru',
   'https://zvyagina.students.nomorepartiesxyz.ru',
   'http://zvyagina.students.nomorepartiesxyz.ru',
   'http://localhost:3000',
