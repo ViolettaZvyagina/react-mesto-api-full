@@ -86,18 +86,9 @@ export default class Api {
     }
   }
 
-  /* export const api = new Api({ 
-    url:'https://nomoreparties.co/v1/cohort-43', 
-    headers: {
-    authorization: '542751f4-2e93-4fad-82e3-6e5a73ce5b6d',
-    'Content-Type': 'application/json'
-  } 
-}); */
-
 export const api = new Api({ 
-  url:'http://zvyagina.students.nomorepartiesxyz.ru', 
+  url:'http://api.zvyagina.students.nomorepartiesxyz.ru', 
   headers: {
-  //authorization: '542751f4-2e93-4fad-82e3-6e5a73ce5b6d',
   'Content-Type': 'application/json'
 } 
 });

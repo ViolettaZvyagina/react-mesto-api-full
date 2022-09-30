@@ -167,22 +167,6 @@ function App() {
     }
   }, [isLoggedIn])
 
-  /* function checkToken() {
-    const token = localStorage.getItem('token');
-    if (token) {
-      auth.getToken(token)
-        .then ((res) => {
-          if (res) {
-            setUserEmail(res.email);
-            setIsLoggedIn(true);
-          }
-        })
-        .catch((error) => {
-          console.log(`Ошибка: ${error}`);
-        })
-    }
-  } */
-
   useEffect(() => {
     if (isLoggedIn) {
       getUserData();
@@ -259,13 +243,6 @@ function App() {
       console.log(`Ошибка: ${error}`);
     })
   }
-
-  /*function handleLogout () {
-    localStorage.removeItem('token');
-    setIsLoggedIn(false);
-    setUserEmail('');
-    history.push('/sign-in');
-  };*/
 
   return (
   <CurrentUserContext.Provider value={currentUser}>
