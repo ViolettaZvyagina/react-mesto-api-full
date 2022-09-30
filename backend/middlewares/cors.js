@@ -1,8 +1,8 @@
 const allowedCors = [
-  'https://api.zvyagina.students.nomorepartiesxyz.ru',
-  'http://api.zvyagina.students.nomorepartiesxyz.ru',
-  'https://zvyagina.students.nomorepartiesxyz.ru',
-  'http://zvyagina.students.nomorepartiesxyz.ru',
+  'https://api.zvyagina.students.nomoredomains.club',
+  'http://api.zvyagina.students.nomoredomains.club',
+  'https://zvyagina.students.nomoredomains.club',
+  'http://zvyagina.students.nomoredomains.club',
   'http://localhost:3000',
   'https://localhost:3000',
 ];

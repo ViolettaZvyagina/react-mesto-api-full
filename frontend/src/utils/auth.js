@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://api.zvyagina.students.nomorepartiesxyz.ru';
+export const BASE_URL = 'http://api.zvyagina.students.nomoredomains.club';
 
 export const handleResponse = (res) => {
   if (res.ok) {
