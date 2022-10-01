@@ -5,4 +5,4 @@
 
 Ссылка на подключение к BM: violetta@51.250.79.172
 
-IP 51.250.79.172 Frontend https://api.zvyagina.students.nomoredomains.club Backend https://zvyagina.students.nomoredomains.club
+IP 51.250.79.172 Frontend https://zvyagina.students.nomoredomains.club Backend https://api.zvyagina.students.nomoredomains.club
