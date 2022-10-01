@@ -87,7 +87,7 @@ export default class Api {
   }
 
 export const api = new Api({ 
-  url:'http://api.zvyagina.students.nomoredomains.club', 
+  url:'https://api.zvyagina.students.nomoredomains.club', 
   headers: {
   'Content-Type': 'application/json'
 } 
